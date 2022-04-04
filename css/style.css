@@ -78,8 +78,7 @@ iframe{
 }
 
 .celebimgs img{
-    margin: 3%;
-
+    margin: 1%;
 }
 
 .cardib img{
@@ -145,9 +144,6 @@ textarea{
     }
   }
 
-
-
-/* Grid AND Flex*/
 /*Index*/
 .hermesimgs{
     display: flex;
@@ -216,15 +212,69 @@ fieldset > div{
     width: 25%;
 }
 
+/* TABLET VIEW */
+@media  screen and (min-width: 768px){
+h1{
+    font-size: 2em;
+}
+@keyframes mymove {
+    from {opacity: 0; color: white; scale: (1,1); font-size: 0em;}
+    to {opacity: 1; color: #a0005d; scale: (2,2); font-size: 2em;}
+  }
 
+iframe{
+    width: 65%;
+    
+}
 
+.hermesimgs {
+    width: 35%;
+    align-items: space-between;
+}
+#stackedbags{
+    width: 30%;
+}
+
+.celebimgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    row-gap: 3px;
+    justify-content: center;
+}
+
+.cardib img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.special {
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+/*FULL-SCREEN VIEW*/
+@media  screen and (min-width: 1200px){
+
+}
+    
 
 
 
 
 
 /*
+Questions:
+a: visted - font weight not working
 
+.hermesimgs not going side by side
+video not fully visible
+
+.celeb imgs center 
+
+.special alternating grid
 
 BOOTSTRAP https://getbootstrap.com/docs/4.0/components/dropdowns/
 
