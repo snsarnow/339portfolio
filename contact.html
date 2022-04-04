@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/62a7ad2907.js" crossorigin="anonymous"></script>
+
+   <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL4DRVC27D"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EL4DRVC27D');
+    </script>
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <a class = "skip" href=#main>Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+                <li><a href = "index.html">The Birkin</a></li>
+                <li><a href = "history.html">History</a></li>
+                <li><a href = "celebrities.html">Celebrities</a></li>
+				<li><a href = "specialty.html">Specialty</a></li>
+                <li class = "active"><a href = "contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+        <h1>Contact Us</h1>
+    </header>
+        <br>
+        <main class="contact_main" id="main">
+        <form
+        action="https://formspree.io/f/xnqwzdwv"
+        method="POST">
+      
+            <fieldset>
+                <div>
+                <label for="fname"> First Name: </label>
+                <input type="text" name="fname" id="fname">
+                </div>
+
+                <div>
+                <label for="lname"> Last Name:</label>
+                <input type="text" name="lname" id="lname">
+                </div>
+
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                <label for="phone_num">Phone Number:</label>
+                <input type="tel" name="phone_num" id="phone_num">
+                </div>
+
+                <div>
+                <label for="message">Leave a Message:</label>
+                <textarea name="message" id="message"></textarea>
+                </div>
+
+                <div>
+                <label for="insertpic">Share a Picture of your Birkin Bag:</label>
+                <input type="file" name="insertpic" id="insertpic">
+                </div>
+                <div class="center_submit">
+                <input type="submit"  value="Submit">
+                </div>
+            </fieldset>
+        </form>
+        </main>
+        <footer>
+            <p>Sophia Sarnowski &copy; 2022</p>
+        </footer>
+    </body>
+    </html>
