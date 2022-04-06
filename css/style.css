@@ -63,6 +63,7 @@ img{
     border: 3px solid #92919181;
     padding: 3px;
     margin: 10px;
+    width: 200px;
 }
 
 footer{
@@ -78,6 +79,7 @@ iframe{
 }
 
 .celebimgs img{
+    height: 300px;
     margin: 1%;
 }
 
@@ -151,10 +153,6 @@ textarea{
     flex-direction: row;
     justify-content: center;
     
-}
-
-.hermesimgs img{
-    width: 200px;
 }
 
 #stackedbags{
@@ -269,6 +267,10 @@ iframe{
     justify-content: center;
 }
 
+.celebimgs img{
+    width: 50%;
+    height: auto;
+}
 .celebimgs img:nth-child(odd){
     margin: auto;
     grid-column: 1/span 1;
@@ -287,9 +289,8 @@ iframe{
 
 .special {
     grid-template-columns: 1fr 1fr;
+    row-gap: 1%;
 }
-
-
 
 }
 
@@ -320,6 +321,7 @@ iframe{
 /*
 Questions:
 a: visted - font weight not working - check google fonts
+fix nav across all pages
 
 .special alternating grid
 
