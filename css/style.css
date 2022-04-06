@@ -26,7 +26,7 @@ nav li a{
 
 .active a:visited{
     color: #a0005d;
-    font-weight: bolder;
+    font-weight: 900;
     
 }
 
@@ -153,6 +153,10 @@ textarea{
     
 }
 
+.hermesimgs img{
+    width: 200px;
+}
+
 #stackedbags{
     margin: auto;
     display: flex;
@@ -217,14 +221,27 @@ fieldset > div{
 h1{
     font-size: 2em;
 }
-header nav{
-    text-align: right;
+header nav ul{
+    display: grid;
+    grid-template-columns: 20% 30% 50% ;
 }
 
-.fa-bag-shopping::before{
-    text-align: left;
+.links{
+    grid-column: 3/span 1;
 }
 
+.hermesimgs{
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.hermesimgs img{
+    width: 80%;
+}
+
+header nav ul li i{
+    grid-column: 1/span 1;
+}
 
 @keyframes mymove {
     from {opacity: 0; color: white; scale: (1,1); font-size: 0em;}
@@ -252,6 +269,16 @@ iframe{
     justify-content: center;
 }
 
+.celebimgs img:nth-child(odd){
+    margin: auto;
+    grid-column: 1/span 1;
+}
+
+.celebimgs img:nth-child(even){
+    margin: auto;
+    grid-column: 2/span 1;
+}
+
 .cardib img{
     margin-left: auto;
     margin-right: auto;
@@ -262,10 +289,26 @@ iframe{
     grid-template-columns: 1fr 1fr;
 }
 
+
+
 }
 
 /*FULL-SCREEN VIEW*/
 @media  screen and (min-width: 1200px){
+    header nav ul{
+        display: grid;
+        grid-template-columns: 20% 30% 50% ;
+    }
+    
+    .links{
+        grid-column: 3/span 1;
+    }
+
+    .hermesimgs {
+        flex-direction: row;
+        width: 35%;
+        align-items: space-between;
+    }
 
 }
     
@@ -276,13 +319,7 @@ iframe{
 
 /*
 Questions:
-a: visted - font weight not working
-move shopping bag to left corner
-
-.hermesimgs not going side by side
-video not fully visible
-
-.celeb imgs center 
+a: visted - font weight not working - check google fonts
 
 .special alternating grid
 
