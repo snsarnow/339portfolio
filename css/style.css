@@ -45,8 +45,11 @@ h1{
     font-style: oblique;
     font-weight: bolder;
     color: #a0005d;
-    animation: mymove 5s; 
     
+}
+
+.index_title{
+    animation: mymove 5s; 
 }
 
 h2{
@@ -142,7 +145,7 @@ textarea{
   }
 
 @media screen and (prefers-reduced-motion){
-    h1{
+    .index_title{
       animation: none;
     }
   }
@@ -171,7 +174,7 @@ textarea{
     justify-content: center;
 }
 
-/* Celeb CHANGE TO GRID*/
+/* Celeb */
 .celebimgs{
     display: grid;
     grid-template-columns: 1fr;
@@ -230,7 +233,6 @@ header nav ul{
 .links{
     grid-column: 3/span 1;
 }
-
 .hermesimgs{
     flex-wrap: nowrap;
     margin: auto;
@@ -289,10 +291,6 @@ iframe{
     width: 25%;
 }
 
-/* .special {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1%;
-} */
 }
 
 /*DESKTOP VIEW*/
@@ -371,6 +369,60 @@ iframe{
         margin: revert;
     }
 
+   .contact_title{
+       animation: none;
+   }
+
+   .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin: auto;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    color: #a0005d;
+    transform: rotateY(180deg);
+  }
+
+  .contact_main{
+    min-height: 400px;
+    }
+
+ @media screen and (prefers-reduced-motion){
+    .flip-card-inner{
+        transition: none;
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+    .flip-card-back{
+        display: none;
+    }
+      }
 }
     
 
@@ -379,9 +431,8 @@ iframe{
 
 
 /*
-
-keyboard accessible flipcard
-extra
+Questions:
+contact form positioning
 
 INDEX - DONE
 HISTORY - DONE
