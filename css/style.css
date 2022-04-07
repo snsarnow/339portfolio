@@ -24,10 +24,10 @@ nav li a{
     
 }
 
-.active a:visited{
+.active a{
     color: #a0005d;
-    font-weight: 900;
-    
+    font-weight: bold;
+    font-style: italic;
 }
 
 .skip{
@@ -68,6 +68,7 @@ img{
 
 footer{
     background: #92919181;
+    font-family: 'Playfair Display', serif;
     color: white;
     width: 100%;
 }
@@ -170,14 +171,16 @@ textarea{
     justify-content: center;
 }
 
-/* Celeb */
+/* Celeb CHANGE TO GRID*/
 .celebimgs{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
+.celebimgs img{
+    margin: auto;
+}
 .cardib{
     display: flex;
     flex-wrap: wrap;
@@ -247,9 +250,8 @@ header nav ul li i{
   }
 
 iframe{
-    width: 65%;
-    
-}
+    width: 60%;
+  }
 
 .hermesimgs {
     width: 35%;
@@ -287,15 +289,14 @@ iframe{
     width: 25%;
 }
 
-.special {
+/* .special {
     grid-template-columns: 1fr 1fr;
     row-gap: 1%;
+} */
 }
 
-}
-
-/*FULL-SCREEN VIEW*/
-@media  screen and (min-width: 1200px){
+/*DESKTOP VIEW*/
+@media  screen and (min-width: 1000px){
     header nav ul{
         display: grid;
         grid-template-columns: 20% 30% 50% ;
@@ -307,8 +308,67 @@ iframe{
 
     .hermesimgs {
         flex-direction: row;
-        width: 35%;
+        width: 25%;
         align-items: space-between;
+    }
+
+    #stackedbags{
+        width: 20%;
+    }
+
+    iframe{
+        width: 50%;
+      }
+
+    .celebimgs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        row-gap: 3px;
+        justify-content: center;
+    }
+    
+    .celebimgs img{
+        width: 50%;
+        height: auto;
+    }
+    .celebimgs img:nth-child(3n+1){
+        margin: auto;
+        grid-column: 1/span 1;
+    }
+    
+    .celebimgs img:nth-child(3n+2){
+        margin: auto;
+        grid-column: 2/span 1;
+    }
+
+    .celebimgs img:nth-child(3n+3){
+        margin: auto;
+        grid-column: 3/span 1;
+    }
+
+    .view{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+    .view img{
+        grid-column: 1/ span 1;
+        grid-row: 1 / span 2;
+    }
+
+    .view:nth-child(even) img{
+        grid-column: 2/ span 1;
+        grid-row: 1 / span 2;
+    }
+
+    .view p{
+        grid-row: 2/ span 1;
+    }
+    .view h2{
+        grid-row: 1/ span 1;
+        align-self: flex-end;
+        margin: revert;
     }
 
 }
@@ -319,13 +379,15 @@ iframe{
 
 
 /*
-Questions:
-a: visted - font weight not working - check google fonts
-fix nav across all pages
 
-.special alternating grid
+keyboard accessible flipcard
+extra
+
+INDEX - DONE
+HISTORY - DONE
+CELEB - DONE
+SPECIAL - DONE
+CONTACT - DONE
 
 BOOTSTRAP https://getbootstrap.com/docs/4.0/components/dropdowns/
-
 */
-

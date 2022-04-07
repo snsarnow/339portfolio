@@ -11,9 +11,9 @@
     <script src="https://kit.fontawesome.com/62a7ad2907.js" crossorigin="anonymous"></script>
 
    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL4DRVC27D"></script>
@@ -33,13 +33,15 @@
         <nav>
             <ul>
                 <li><i class="fa-solid fa-bag-shopping"></i></li>
-                <div class = "links">
+                <li></li>
+                <li><div class = "links">
+                  <ol>
                 <li class = "active"><a href = "index.html">The Birkin</a></li>
                 <li><a href = "history.html">History</a></li>
                 <li><a href = "celebrities.html">Celebrities</a></li>
 				<li><a href = "specialty.html">Specialty</a></li>
                 <li><a href = "contact.html">Contact Us</a></li>
-                </div>
+                  </ol>
             </ul>
         </nav>
         <br>
@@ -69,4 +71,10 @@
     </footer>
 
 </body>
+<script>
+    $(document).ready(function(){
+  var loading = $(".loading");
+  loading.delay(loading.attr("delay-hide")).slideUp();
+});
+</script>
 </html>
