@@ -314,7 +314,7 @@ iframe{
     }
     
     .celebimgs img{
-        width: 50%;
+        width: 60%;
         height: auto;
     }
     .celebimgs img:nth-child(3n+1){
@@ -362,8 +362,8 @@ iframe{
 
    .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 175px;
+    height: 55px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     margin: auto;
@@ -378,7 +378,9 @@ iframe{
     transform-style: preserve-3d;
   }
   
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
   }
   
@@ -420,7 +422,7 @@ iframe{
 /*
 Questions:
 contact form positioning
-flip card tab
+flip card 
 
 INDEX - DONE
 HISTORY - DONE
