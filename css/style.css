@@ -301,10 +301,6 @@ iframe{
         width: 20%;
     }
 
-    iframe{
-        width: 50%;
-      }
-
     .celebimgs{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
@@ -418,17 +414,3 @@ iframe{
 
 
 
-
-/*
-Questions:
-contact form positioning
-flip card 
-
-INDEX - DONE
-HISTORY - DONE
-CELEB - DONE
-SPECIAL - DONE
-CONTACT - DONE
-
-BOOTSTRAP https://getbootstrap.com/docs/4.0/components/dropdowns/
-*/
