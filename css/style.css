@@ -138,6 +138,9 @@ textarea{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.celebimgs a{
+    text-align: center;
+}
 /*Animations*/
 @keyframes mymove {
     from {opacity: 0; color: white; scale: (1,1); font-size: 0em;}
